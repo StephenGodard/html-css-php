@@ -211,9 +211,7 @@ skills .skill_box .box #g1 {
         display: inline-block;
         margin: 1em;
      background-color:#e7f1f8;
-    font
-    
-    background-size:cover;
+        background-size:cover;
       }
 skills .skill_box .box #g2 {
         width:200px; height:160px;
@@ -230,7 +228,6 @@ skills .skill_box .box #g3 {
         margin: 1em;
         float:right;
      background-color:#e7f1f8;
-   
     background-size:cover;
       }
 
