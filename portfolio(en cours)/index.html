@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!--<link rel="stylesheet" href="css/fontawesome.css">-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+     <script src="raphael-2.1.4.min.js"></script>
+                        <script src="justgage.js"></script>
         </head>    
 <body>
     
@@ -36,12 +38,13 @@
                 </div>
 
                 <span class="home">
+                    <br/> <br/><br/> <br/><br/> <br/> <br/> <br/><br/> <br/><br/><br/> <br/><br/>
                         
                                      <h1 id="home"><b>Bonjour et bienvenu sur mon site !</b> </h1>
                                     <h2>vous retrouverez tout mes projets et créations sur cette page ! </h2>
+                    
                     <br/> <br/> <br/><div><a href="#">En savoir plus</a></div>
-                    <br/> <br/> <br/>
-                     
+                      <br/> <br/><br/> <br/><br/> <br/> <br/> <br/><br/> <br/><br/><br/> <br/><br/>
                 </span>
       
           </div>
@@ -54,10 +57,12 @@
         <div class="container">
             <div class="section_title">
             <h1 id="presentation">Présentation</h1>
+                <br/>
             <p>
                 Je m’appelle Stephen Godard et j'ai intégré en septembre 2018 le cursus management en ingenierie informatique(M2I) à l'Itescia en vue de devenir développeur full stack. Passionné d'informatique, j’ai créé ce site web de toutes pièces. Vous pourrez ainsi voir mes créations et mes projets réalisés dans la partie « Projets ». 
                 </p>
             </div>
+              <br/> <br/><br/> <br/><br/> <br/> <br/> <br/><br/> <br/><br/>
             <div class="service_box">
                 <div class="box">
                    
@@ -65,21 +70,24 @@
                                          <h1>Design</h1>
                     <p> je possède des connaissances et des compétences dans le domaine du webdesign, j'utilise principalement Photoshop et Indesign</p>
                   
+                  
                 </div>
                 <div class="box">
                     
                     <i class="fas fa-code"></i>
                       <h1>developpement</h1>
                     <p> le développement est ma passion que ce soit développement web ou programmation informatique je code principalement en php, c++ html/css et python </p>
-                  
+                    <p>langages de programmation(c/c++,python)</p>
+                    <p>langages web(html,css,javascript)</p>
                 </div>
                 <div class="box">
                      
                     <i class="fas fa-network-wired"></i>
                     <h1> réseaux</h1>
                     <p>je possède des connaissances et des compétences dans le domaines des réseaux, comme les protocoles de routages les vlans et adessages ip</p>
-                    
+                    <p> protocoles de communications(TCP/IP,UDP) architectures réseaux et modèle OSI</p>
                 </div>
+                  <br/> <br/><br/> <br/><br/> <br/> <br/> <br/><br/> <br/><br/><br/> <br/><br/>
                  <div class="clearfix" ></div>
             </div>
                 </div> </div>
@@ -88,38 +96,79 @@
     <div class="skills">
         <div class="container">
             <div class="section_title">
-        <h1 id="skills">Compétences</h1>
+        <h1>Compétences</h1>
         <p> je possède des compétences dans le développement</p>
         </div>
+ <br/> <br/><br/> <br/><br/> <br/> <br/> 
         <div class="skill_box">
             <div class="box">
-                <h1>Développement</h1>
-            <h2>langages web(html/css/js/php)</h2>
-      <div class="counter">
-         
+   <div id="g1"></div>
+                <script>
+   document.addEventListener("DOMContentLoaded", function(event) {
+
+      var g1, g2, g3;
+
+    var g1 = new JustGage({
+    id: "g1",
+    value: 75,
+    min: 0,
+    max: 100,
+    title: "Développement"
+  });
+     
+
+     var g2 = new JustGage({
+    id: "g2",
+    value: 45,
+    min: 0,
+    max: 100,
+    title: "Design"
+  });
+
+       var g3 = new JustGage({
+    id: "g3",
+    value: 59,
+    min: 0,
+    max: 100,
+    title: "Réseaux"
+
+                       });
+                      });
+                </script>
                 
-                </div>
-            <h2>langages de programmation(c/c++,python)</h2>
-               
+                   
+            <h2>langages web(html/css/js/php)</h2>
+                    <h2>langages de programmation(c/c++,python)</h2>
+                <br/> 
+                
             
                                         </div>
             <div class="box"> 
-            <h1>Design et graphique</h1>
+                 <div id="g2"></div>
                 <h2>Photoshop/Indesign</h2>
+                <br/><br/><br/>
                
             </div>
-            <div class="box">
-                    <h1>Réseaux</h1>
+             <div class="box"> 
+                   <div id="g3"></div> 
+                    
                     <h2>protocoles de communications(TCP/IP,UDP) architectures réseaux et modèle OSI</h2>
+               
+                    
+                   <br/> <br/> <br/>
             
             </div>
             
         
             
         </div>
-</div>
-    </div>
-        
+        </div></div>
+    
+    <div class="clearfix" ></div>
+
+ <!-- Fin Compétences  -->
+    <!-- début Projets -->
+
 
    
     
